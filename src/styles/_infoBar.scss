@@ -1,0 +1,41 @@
+.info-bar {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  background: $primaryColor;
+  padding: 0 20px;
+
+  &__content {
+    display: flex;
+    max-width: calc($maxWidth / 2);
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+      display: block;
+      width: max-content;
+    }
+  }
+  &__column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $secondaryColor;
+    border-radius: 20px;
+    margin: 0 20px;
+    padding: 7px 10px;
+
+    :first-child {
+      margin-left: 0;
+    }
+
+    :last-child {
+      margin-right: 0;
+    }
+    @media screen and (max-width: 768px) {
+      margin: 10px 0;
+      p {
+      }
+    }
+  }
+}

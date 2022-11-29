@@ -1,0 +1,39 @@
+.search {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background: $primaryColor;
+  padding: 0 20px;
+  &__content {
+    max-width: calc($maxWidth/2);
+    width: 100%;
+    height: 55px;
+    position: relative;
+    background: $secondaryColor;
+    margin: 0 auto;
+    color: $white;
+  }
+  &__icon {
+    position: absolute;
+    width: 30px;
+    top: 14px;
+    left: 15px;
+  }
+
+  &__input {
+    height: 40px;
+    font-size: $fontBig;
+    position: absolute;
+    left: 0;
+    margin: 8px 0;
+    padding: 0 0 0 60px;
+    border: 0;
+    width: 100%;
+    background: transparent;
+    color: $white;
+
+    :focus {
+      outline: none;
+    }
+  }
+}

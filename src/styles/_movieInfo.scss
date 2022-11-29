@@ -1,0 +1,65 @@
+.movie-info {
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+  animation: animate 1s;
+
+  @keyframes animate {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    max-height: 500px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+      max-height: none;
+    }
+  }
+  &__poster {
+    @media screen and (max-width: 768px) {
+      margin: 0 auto;
+    }
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 40px;
+    color: $white;
+    overflow: hidden;
+  }
+  &__title {
+    @media screen and (max-width: 768px) {
+      font-size: $fontBig;
+    }
+  }
+  &__directors {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+  }
+  &__star {
+    height: 20px;
+    margin-right: 5px;
+  }
+  &__director {
+    margin-left: 40px;
+  }
+}

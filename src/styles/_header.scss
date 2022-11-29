@@ -1,0 +1,26 @@
+.header {
+  background: $primaryColor;
+  padding: 0 20px;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: $maxWidth;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+  &__logo {
+    width: 200px;
+    font-size: 30px;
+    @media screen and (max-width: 500px) {
+      width: 150px;
+    }
+  }
+
+  &__tmdb-logo {
+    width: 100px;
+    @media screen and (max-width: 500px) {
+      width: 80px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.grid {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 20px 20px;
+  }
+
+  &__header {
+    color: $white;
+    padding: 16px 0;
+    font-weight: 700;
+
+    @media screen and (max-width: 768px) {
+      font-size: $fontBig;
+    }
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-gap: 32px;
+  }
+}
